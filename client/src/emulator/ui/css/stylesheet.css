@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+.center {
+    text-align: center;
+}
+#debugger {
+    margin: 10px;
+    width: auto;
+    font-family: 'Ubuntu Mono', monospace;
+}
+#debugger button {
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 3px;
+}
+#debugger input {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+}
+#debugger input[type="file"] {
+    font-size: 12px;
+}
+#debugger textarea {
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 3px;
+    resize: none;
+    font-size: 16px;
+    border: 0;
+}
+#debugger textarea:focus {
+    outline-width: 0;
+}
+#menubar li {
+    cursor: pointer;
+}
+#menu li {
+    display: inline-block;
+}
+#debugger ul {
+    padding: 5px;
+}
+#memory, #stack, #program, #screen canvas {
+    border: 1px solid #c3c3c3;
+}
+#program, #program ul, #cpu, #cpu ul {
+    height: 304px;
+    vertical-align: top;
+}
+#stack, #stack ul {
+    width: 160px;
+}
+#memory, #memory textarea, #stack, #stack ul {
+    height: 260px;
+}
+#memory, #memory textarea {
+    width: 470px;
+}
+.memory-page {
+    width: 75px;
+}
+#flags {
+    vertical-align: top;
+}
+#debugger li.selected {
+    background-color: black;
+    color: white;
+}
+#debugger li.selected:hover {
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+#program li:hover, #stack li:hover {
+    background-color: #ccc;
+}
+#program ul {
+    padding: 0;
+}
+#program ul, #stack ul, #flags li, #flags label, #flags input[type="checkbox"] {
+    cursor: pointer;
+}
+#flags input[type="checkbox"] {
+    vertical-align: middle;
+}
+#screen canvas {
+    width: 480px;
+    height: 320px;
+    background-color: #ececec;
+}
+#controls {
+    vertical-align: top;
+    text-align: center;
+}
+#controls button {
+    width: 50px;
+}
+#cpu span.updated, #flags li.updated {
+    background-color: yellow;
+}
